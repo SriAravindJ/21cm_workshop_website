@@ -4,8 +4,10 @@ function changeNavbarColor() {
     var navbar = document.querySelector(".navbar");
     var links = navbar.querySelectorAll("a");  // Select all <a> elements inside the navbar
     var scrollPosition = window.scrollY;
+    var viewportHeight = window.innerHeight; // Viewport height in pixels
+    var vhEquivalent = (100 / viewportHeight) * 500; // Convert 100px to vh
 
-    if (scrollPosition > 100) {
+    if ((scrollPosition / viewportHeight) * 500 > vhEquivalent) {
         navbar.style.backgroundColor = "#c5c3c3";
         
         // Change the color of each link to black
