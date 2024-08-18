@@ -6,7 +6,7 @@ body {
     padding: 50px 190px 0 190px;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url('./nrao.jpg'); /* Path to your image */
+    background-image: <img src="nrao.jpg">; /* Path to your image */
     opacity: 0.9;
     background-size: cover; /* Ensures the image covers the entire header */
     background-position: calc(50% - 0px) center; /* Centers the image in the header */
