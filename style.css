@@ -1,0 +1,122 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    /* margin: 10px 50px 0 50px;      */
+    padding: 50px 190px 0 190px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('/home/sriaravindj/Downloads/nrao.jpg'); /* Path to your image */
+    opacity: 0.9;
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: calc(50% - 0px) center; /* Centers the image in the header */
+    /* background-repeat: no-repeat; */
+    /* background-color: #628395; */
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    font-family: 'Poppins', sans-serif; 
+    background-color: white;
+}
+
+.header {
+    font-family: 'Poppins', sans-serif; 
+    background-image: url('/home/sriaravindj/Downloads/reionization_90.png'); /* Path to your image */
+    opacity: 1;
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: calc(50% - 0px) center; /* Centers the image in the header */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #ffffff; /*Adjust text color for better contrast */
+    padding: 60px; /* Adjust padding to control header size */
+}
+
+.header h1 {
+    font-size: 45px;
+    text-align: center;
+    font-weight: 600;
+}
+.white-text{
+    color: white;
+}
+.red-text {
+    color: yellow;
+}
+
+.date {
+    margin-top: 10px; /* Adjust space above */
+    margin-bottom: 30px; /* Adjust space below */
+    font-size: 35px;
+    text-align: center;
+    font-weight: 1000;
+    color: yellow;
+}
+.location {
+    margin-top: 10px; /* Adjust space above */
+    margin-bottom: 5px; /* Adjust space below */
+    font-size: 25px;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    overflow: hidden;
+    list-style: none;
+    top: 0;
+    left:198px;
+    right:198px;
+    /* background-color: #333; Dark background color */
+    padding: 0px;
+    text-align: center;
+}
+
+.navbar a {
+    font-family: 'Poppins', sans-serif;
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: #ffffff; /*White text color */
+    text-align: center; /* Center the text */
+    padding: 10px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+    font-weight: 550;
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.sec1{
+    color: black;
+    text-align: left;
+    font-size: 14px;
+}
+.sec11{
+    text-align: left;
+    font-size:21px;
+}
+.points{
+    text-align: left;
+}
+.points2{
+    text-align: left;
+    padding-left: 100px;
+    font-size: 18px;
+}
+.points ul{
+    list-style-type: circle; /* Default bullet style */
+    padding-left: 120px;
+    font-size: 20px;
+    text-align: left;
+    /* text-align: center; */
+}
+.points li {
+    margin-bottom: 10px; /* Adds space between each bullet point */
+    color: black; /* Text color */
+    font-family: 'Poppins', sans-serif; /* Font style */
+    font-size: 16px;
+}
