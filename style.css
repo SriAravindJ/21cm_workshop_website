@@ -3,10 +3,11 @@ html {
 }
 body {
     /* margin: 10px 50px 0 50px;      */
-    padding: 6vh 14.3vw 0 14.3vw;
+    /* padding: 6vh 14.3vw 0 14.3vw; */
+    padding: 6vh 10vw 0 10vw; 
     font-family: Arial, sans-serif;
     /* line-height: 1.6; */
-    background-image: url('./nrao.jpg'); /* Path to your image */
+    background-image: url('nrao.jpg'); /* Path to your image */
     opacity: 0.9;
     background-size: cover; /* Ensures the image covers the entire header */
     background-position: calc(50% - 0px) center; /* Centers the image in the header */
@@ -21,18 +22,19 @@ body {
 }
 
 .header {
-    font-family: 'Poppins', sans-serif; 
-    background-image: url('./reionization_90.png'); /* Path to your image */
+    font-family: 'Poppins', sans-serif;
+    background-image: url('reionization_90.png'); /* Path to your image */
     opacity: 1;
     background-size: cover; /* Ensures the image covers the entire header */
     background-position: calc(50% - 0px) center; /* Centers the image in the header */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     color: #ffffff; /*Adjust text color for better contrast */
-    padding: 60px; /* Adjust padding to control header size */
+    padding: 50px; /* Adjust padding to control header size */
 }
 
 .header h1 {
-    font-size: 6vh;
+    font-size: 5.5vh;
+    margin-top: 0vh;
     text-align: center;
     font-weight: 600;
 }
@@ -44,32 +46,59 @@ body {
 }
 
 .date {
-    margin-top: 5vh; /* Adjust space above */
-    margin-bottom: 5vh; /* Adjust space below */
-    font-size: 5vh;
+    margin-top: -1.5vh; /* Adjust space above */
+    margin-bottom: 0vh; /* Adjust space below */
+    font-size: 4.2vh;
     text-align: center;
-    font-weight: 1000;
-    color: yellow;
+    font-weight: 900;
+    font-family: 'Bebas Neue';
+    color: black;
 }
 .location {
-    margin-top: 5vh; /* Adjust space above */
-    margin-bottom: 2vh; /* Adjust space below */
-    font-size: 4vh;
+    margin-top: 1vh; /* Adjust space above */
+    margin-bottom: 0vh; /* Adjust space below */
+    font-size: 3.5vh;
     text-align: center;
-    font-weight: 1000;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Gill Sans';
 }
 
 .navbar {
+    display: flex;
+    /* align-items: center; */
+    justify-content:center;
+    background-color: transparent;
     font-family: 'Poppins', sans-serif;
     position: fixed;
     overflow: hidden;
     list-style: none;
     top: 0;
-    left:14.9vw;
-    right:14.9vw;
-    /* background-color: #333; Dark background color */
+    left:0;
+    right:0;
     padding: 0;
     text-align: center;
+}
+
+/* .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+} */
+
+.navbar .logo img {
+    height: 50px; /* Adjust logo size */
+    margin-left: -12vh;
+    margin-top: -1vh;
+}
+
+#navbarLogo {
+    opacity: 0;
+    width: 50px;
+    height: 50px;
 }
 
 .navbar a {
@@ -80,7 +109,7 @@ body {
     text-align: center; /* Center the text */
     padding: 2vh 3.6vh; /* Add some padding */
     text-decoration: none; /* Remove underline */
-    font-weight: 550;
+    font-weight: 600;
 }
 
 main {
@@ -94,16 +123,26 @@ main {
     text-align: left;
     font-size: 2.1vh;
 }
-.sec11{
+
+.c1{
+    text-align: center;
+}
+.c2{
+    text-align: center;
+}
+.c3{
+    text-align: center;
+}
+/* .sec11{
     text-align: left;
     font-size:3vh;
-}
+} */
 .points{
-    text-align: left;
+    text-align: center;
 }
 .points2{
-    text-align: left;
-    padding-left: 14vh;
+    text-align: center;
+    /* padding-left: 14vh; */
     font-size: 2.6vh;
 }
 .points ul{
