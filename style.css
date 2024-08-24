@@ -90,9 +90,9 @@ body {
 } */
 
 .navbar .logo img {
-    height: 50px; /* Adjust logo size */
-    margin-left: -12vh;
-    margin-top: -1vh;
+    height: 3vw; /* Adjust logo size */
+    margin-left: 0vh;
+    margin-top: 0vh;
 }
 
 #navbarLogo {
@@ -133,10 +133,10 @@ main {
 .c3{
     text-align: center;
 }
-/* .sec11{
-    text-align: left;
-    font-size:3vh;
-} */
+.c5{
+    font-size: medium;
+    font-weight: normal;
+}
 .points{
     text-align: center;
 }
