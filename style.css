@@ -54,7 +54,17 @@ body {
     font-family: 'Bebas Neue';
     color: black;
 }
-.location {
+.location1{
+    margin-top: 1vh; /* Adjust space above */
+    margin-bottom: 0vh; /* Adjust space below */
+    font-size: 3.5vh;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Gill Sans';
+}
+
+.location2 {
     margin-top: 1vh; /* Adjust space above */
     margin-bottom: 0vh; /* Adjust space below */
     font-size: 3.5vh;
@@ -93,6 +103,9 @@ body {
     height: 3vw; /* Adjust logo size */
     margin-left: 0vh;
     margin-top: 0vh;
+    left: 2vh;
+    margin: 0vh;
+    position: absolute;
 }
 
 #navbarLogo {
@@ -121,7 +134,7 @@ main {
 .sec1{
     color: black;
     text-align: left;
-    font-size: 2.1vh;
+    font-size: 2.2vh;
 }
 
 .c1{
