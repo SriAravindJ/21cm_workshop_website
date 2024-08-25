@@ -1,136 +1,106 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
-    /* margin: 10px 50px 0 50px;      */
-    /* padding: 6vh 14.3vw 0 14.3vw; */
     padding: 6vh 10vw 0 10vw; 
     font-family: Arial, sans-serif;
-    /* line-height: 1.6; */
-    background-image: url('nrao.jpg'); /* Path to your image */
+    background-image: url('nrao.jpg');
     opacity: 0.9;
-    background-size: cover; /* Ensures the image covers the entire header */
-    background-position: calc(50% - 0px) center; /* Centers the image in the header */
-    /* background-repeat: no-repeat; */
-    /* background-color: #628395; */
+    background-size: cover; 
+    background-position: center center; 
     font-family: 'Poppins', sans-serif;
 }
 
-.wrapper{
+.wrapper {
     font-family: 'Poppins', sans-serif; 
     background-color: white;
 }
 
 .header {
     font-family: 'Poppins', sans-serif;
-    background-image: url('reionization_90.png'); /* Path to your image */
+    background-image: url('reionization_90.png');
     opacity: 1;
-    background-size: cover; /* Ensures the image covers the entire header */
-    background-position: calc(50% - 0px) center; /* Centers the image in the header */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: #ffffff; /*Adjust text color for better contrast */
-    padding: 50px; /* Adjust padding to control header size */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 50px;
+    text-align: center;
 }
 
 .header h1 {
-    
     font-size: 5.5vh;
     margin-top: 0vh;
-    text-align: center;
     font-weight: 600;
 }
-.white-text{
+
+.white-text {
     color: white;
 }
+
 .red-text {
     color: yellow;
 }
 
 .date {
-    margin-top: -1.5vh; /* Adjust space above */
-    margin-bottom: 0vh; /* Adjust space below */
+    margin-top: -1.5vh;
+    margin-bottom: 0vh;
     font-size: 4.2vh;
     text-align: center;
     font-weight: 900;
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue', sans-serif;
     color: black;
 }
-.location1{
-    margin-top: 1vh; /* Adjust space above */
-    margin-bottom: 0vh; /* Adjust space below */
-    font-size: 3.5vh;
-    text-align: center;
-    font-weight: 700;
-    font-style: italic;
-    font-family: 'Gill Sans';
-}
 
+.location1,
 .location2 {
-    margin-top: 1vh; /* Adjust space above */
-    margin-bottom: 0vh; /* Adjust space below */
+    margin-top: 1vh;
+    margin-bottom: 0vh;
     font-size: 3.5vh;
     text-align: center;
     font-weight: 700;
     font-style: italic;
-    font-family: 'Gill Sans';
+    font-family: 'Gill Sans', sans-serif;
 }
 
 .navbar {
     display: flex;
-    /* align-items: center; */
-    justify-content:center;
+    justify-content: center;
     background-color: transparent;
     font-family: 'Poppins', sans-serif;
     position: fixed;
     overflow: hidden;
     list-style: none;
     top: 0;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     padding: 0;
     text-align: center;
 }
 
-/* .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: white;
-} */
+.navbar a {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 2vh 3.6vh;
+    text-decoration: none;
+    font-weight: 600;
+}
 
 .navbar .logo img {
-     max-width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-    object-fit: contain; /* Ensures the entire logo is visible */
+    object-fit: contain;
 }
 
 .logo-container {
-    overflow: visible; /* Ensures no clipping */
-    width: auto; /* Allows the container to size according to its content */
+    overflow: visible;
+    width: auto;
     height: auto;
-}
-    
-
-
-#navbarLogo {
-    opacity: 0;
-    width: 50px;
-    height: 50px;
-}
-
-.navbar a {
-    font-family: 'Poppins', sans-serif;
-    float: left; /* Make sure that the links stay side-by-side */
-    display: block; /* Change the display to block, for responsive reasons (see below) */
-    color: #ffffff; /*White text color */
-    text-align: center; /* Center the text */
-    padding: 2vh 3.6vh; /* Add some padding */
-    text-decoration: none; /* Remove underline */
-    font-weight: 600;
 }
 
 main {
@@ -139,43 +109,103 @@ main {
     font-size: 2.1vh;
 }
 
-.sec1{
+.sec1 {
     color: black;
     text-align: left;
     font-size: 2.2vh;
 }
 
-.c1{
+.c1, .c2, .c3 {
     text-align: center;
 }
-.c2{
-    text-align: center;
-}
-.c3{
-    text-align: center;
-}
-.c5{
+
+.c5 {
     font-size: medium;
     font-weight: normal;
 }
-.points{
+
+.points {
     text-align: center;
 }
-.points2{
+
+.points2 {
     text-align: center;
-    /* padding-left: 14vh; */
     font-size: 2.6vh;
 }
-.points ul{
-    list-style-type: circle; /* Default bullet style */
+
+
+.points ul {
+    list-style-type: circle;
     padding-left: 17vh;
     font-size: 2.1vh;
     text-align: left;
-    /* text-align: center; */
 }
+
 .points li {
-    margin-bottom: 1.5vh; /* Adds space between each bullet point */
-    color: black; /* Text color */
-    font-family: 'Poppins', sans-serif; /* Font style */
+    margin-bottom: 1.5vh;
+    color: black;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.4vh;
+}
+
+/* Additional styles for small screens (mobile devices) */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 5vh 5vw;
+        background-position: center center;
+    }
+
+    .header {
+        padding: 30px;
+    }
+
+    .header h1 {
+        font-size: 4vh;
+    }
+
+    .date, .location1, .location2 {
+        font-size: 3vh;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        top: auto;
+        position: relative;
+    }
+
+    .navbar a {
+        padding: 1.5vh 2.5vh;
+        font-size: 2vh;
+    }
+
+    .points ul {
+        padding-left: 5vh;
+        font-size: 1.8vh;
+    }
+
+    .points li {
+        font-size: 2vh;
+    }
+
+    main {
+        padding: 2vh;
+        font-size: 1.8vh;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    section {
+        width: 100%;
+        font-size: 2vh;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+    }
 }
