@@ -33,10 +33,7 @@ body {
 }
 
 .header h1 {
-    display: flex;
-    justify-content: center; /* Center content in the header */
-    align-items: center;
-    padding: 20px;
+    
     font-size: 5.5vh;
     margin-top: 0vh;
     text-align: center;
