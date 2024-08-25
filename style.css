@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    padding: 4vh 5vw; /* Reduced padding */
+    padding: 3vh 2vw; /* Further reduced padding */
     font-family: Arial, sans-serif;
     background-image: url('nrao.jpg');
     opacity: 0.9;
@@ -15,6 +15,7 @@ body {
 .wrapper {
     font-family: 'Poppins', sans-serif;
     background-color: white;
+    max-width: 100%; /* Ensures the wrapper does not exceed screen width */
 }
 
 .header {
@@ -25,20 +26,20 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     color: #ffffff;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
 .header h1 {
-    font-size: 4.5vh; /* Adjusted font size */
+    font-size: 4vh; /* Slightly reduced font size */
     margin-top: 0;
     font-weight: 600;
 }
 
 .date {
-    margin-top: -1.5vh;
+    margin-top: -1.2vh;
     margin-bottom: 0;
-    font-size: 3.5vh; /* Adjusted font size */
+    font-size: 3vh; /* Reduced font size */
     text-align: center;
     font-weight: 900;
     font-family: 'Bebas Neue', sans-serif;
@@ -49,7 +50,7 @@ body {
 .location2 {
     margin-top: 1vh;
     margin-bottom: 0;
-    font-size: 3vh; /* Adjusted font size */
+    font-size: 2.5vh; /* Reduced font size */
     text-align: center;
     font-weight: 700;
     font-style: italic;
@@ -76,9 +77,10 @@ body {
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 2vh 3.6vh;
+    padding: 1.8vh 3vh; /* Reduced padding */
     text-decoration: none;
     font-weight: 600;
+    font-size: 1.8vh; /* Reduced font size */
 }
 
 .navbar .logo img {
@@ -97,16 +99,18 @@ body {
 
 main {
     font-family: 'Poppins', sans-serif;
-    padding: 3vh; /* Adjusted padding */
-    font-size: 2vh; /* Adjusted font size */
-    line-height: 1.5; /* Increased line height */
+    padding: 2vh; /* Reduced padding */
+    font-size: 1.8vh; /* Adjusted font size */
+    line-height: 1.4; /* Adjusted line height */
+    max-width: 100%; /* Ensures the main content doesn't exceed screen width */
 }
 
 .sec1 {
     color: black;
     text-align: left;
     font-size: 2vh; /* Adjusted font size */
-    line-height: 1.5; /* Increased line height */
+    line-height: 1.4; /* Adjusted line height */
+    max-width: 100%; /* Ensures the section doesn't exceed screen width */
 }
 
 .c1, .c2, .c3 {
@@ -124,40 +128,40 @@ main {
 
 .points2 {
     text-align: center;
-    font-size: 2.2vh; /* Adjusted font size */
+    font-size: 2vh; /* Adjusted font size */
 }
 
 .points ul {
     list-style-type: circle;
-    padding-left: 4vh; /* Adjusted padding */
-    font-size: 1.8vh; /* Adjusted font size */
+    padding-left: 2vh; /* Reduced padding */
+    font-size: 1.6vh; /* Adjusted font size */
     text-align: left;
 }
 
 .points li {
-    margin-bottom: 1.2vh; /* Adjusted margin */
+    margin-bottom: 1vh; /* Adjusted margin */
     color: black;
     font-family: 'Poppins', sans-serif;
-    font-size: 2vh; /* Adjusted font size */
+    font-size: 1.8vh; /* Adjusted font size */
 }
 
 /* Additional styles for small screens (mobile devices) */
 @media only screen and (max-width: 768px) {
     body {
-        padding: 2vh 4vw; /* Reduced padding further */
+        padding: 2vh 3vw; /* Further reduced padding */
         background-position: center center;
     }
 
     .header {
-        padding: 15px; /* Reduced padding */
+        padding: 10px; /* Reduced padding */
     }
 
     .header h1 {
-        font-size: 3.5vh; /* Reduced font size */
+        font-size: 3vh; /* Reduced font size */
     }
 
     .date, .location1, .location2 {
-        font-size: 2.5vh; /* Reduced font size */
+        font-size: 2.2vh; /* Reduced font size */
     }
 
     .navbar {
@@ -168,23 +172,23 @@ main {
     }
 
     .navbar a {
-        padding: 1.2vh 2.5vh; /* Reduced padding */
-        font-size: 1.6vh; /* Reduced font size */
-    }
-
-    .points ul {
-        padding-left: 3vh; /* Reduced padding */
+        padding: 1.2vh 2vw; /* Reduced padding */
         font-size: 1.4vh; /* Reduced font size */
     }
 
+    .points ul {
+        padding-left: 2vh; /* Further reduced padding */
+        font-size: 1.4vh; /* Further reduced font size */
+    }
+
     .points li {
-        font-size: 1.6vh; /* Reduced font size */
+        font-size: 1.6vh; /* Further reduced font size */
     }
 
     main {
-        padding: 1.5vh; /* Reduced padding */
-        font-size: 1.5vh; /* Reduced font size */
-        line-height: 1.6; /* Increased line height */
+        padding: 1vh; /* Further reduced padding */
+        font-size: 1.4vh; /* Further reduced font size */
+        line-height: 1.5; /* Increased line height */
     }
 
     .container {
@@ -195,8 +199,9 @@ main {
 
     section {
         width: 100%;
-        font-size: 1.6vh; /* Reduced font size */
-        line-height: 1.6; /* Increased line height */
+        font-size: 1.4vh; /* Reduced font size */
+        line-height: 1.5; /* Increased line height */
+        word-break: break-word; /* Ensure words break naturally */
     }
 
     .logo-container {
