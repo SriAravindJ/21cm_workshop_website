@@ -150,12 +150,12 @@ main {
 /* Additional styles for small screens (mobile devices) */
 @media only screen and (max-width: 768px) {
     body {
-        padding: 5vh 5vw;
+        padding: 4vh 5vw;
         background-position: center center;
     }
 
     .header {
-        padding: 30px;
+        padding: 20px;
     }
 
     .header h1 {
@@ -175,21 +175,21 @@ main {
 
     .navbar a {
         padding: 1.5vh 2.5vh;
-        font-size: 2vh;
+        font-size: 1.8vh;
     }
 
     .points ul {
         padding-left: 5vh;
-        font-size: 1.8vh;
+        font-size: 1.6vh;
     }
 
     .points li {
-        font-size: 2vh;
+        font-size: 1.8vh;
     }
 
     main {
         padding: 2vh;
-        font-size: 1.8vh;
+        font-size: 1.6vh;
     }
 
     .container {
@@ -200,7 +200,8 @@ main {
 
     section {
         width: 100%;
-        font-size: 2vh;
+        font-size: 1.8vh;
+        line-height: 1.4; /* Adjust line height for better readability */
     }
 
     .logo-container {
