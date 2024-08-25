@@ -4,11 +4,11 @@ html {
 
 body {
     padding: 6vh 10vw 0 10vw; 
-    font-family: Arial, sans-serif;
-    background-image: url('nrao.jpg');
+    font-family: 'Poppins', sans-serif;
+    background-image: url('nrao.jpg'); /* Path to your image */
     opacity: 0.9;
-    background-size: cover; 
-    background-position: center center; 
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center center; /* Centers the image in the header */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -18,20 +18,19 @@ body {
 }
 
 .header {
-    font-family: 'Poppins', sans-serif;
-    background-image: url('reionization_90.png');
+    background-image: url('reionization_90.png'); /* Path to your image */
     opacity: 1;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    padding: 50px;
-    text-align: center;
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center center; /* Centers the image in the header */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #ffffff; /* Adjust text color for better contrast */
+    padding: 50px; /* Adjust padding to control header size */
 }
 
 .header h1 {
     font-size: 5.5vh;
     margin-top: 0vh;
+    text-align: center;
     font-weight: 600;
 }
 
@@ -44,24 +43,23 @@ body {
 }
 
 .date {
-    margin-top: -1.5vh;
-    margin-bottom: 0vh;
+    margin-top: -1.5vh; /* Adjust space above */
+    margin-bottom: 0vh; /* Adjust space below */
     font-size: 4.2vh;
     text-align: center;
     font-weight: 900;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue';
     color: black;
 }
 
-.location1,
-.location2 {
-    margin-top: 1vh;
-    margin-bottom: 0vh;
+.location1, .location2 {
+    margin-top: 1vh; /* Adjust space above */
+    margin-bottom: 0vh; /* Adjust space below */
     font-size: 3.5vh;
     text-align: center;
     font-weight: 700;
     font-style: italic;
-    font-family: 'Gill Sans', sans-serif;
+    font-family: 'Gill Sans';
 }
 
 .navbar {
@@ -79,30 +77,39 @@ body {
     text-align: center;
 }
 
-.navbar a {
-    font-family: 'Poppins', sans-serif;
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 2vh 3.6vh;
-    text-decoration: none;
-    font-weight: 600;
-}
-
+/* Navbar adjustments */
 .navbar .logo img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-    object-fit: contain;
+    object-fit: contain; /* Ensures the entire logo is visible */
 }
 
 .logo-container {
-    overflow: visible;
-    width: auto;
+    overflow: visible; /* Ensures no clipping */
+    width: auto; /* Allows the container to size according to its content */
     height: auto;
 }
 
+#navbarLogo {
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.navbar a {
+    font-family: 'Poppins', sans-serif;
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 2vh 3.6vh; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600;
+}
+
+/* Main content adjustments */
 main {
     font-family: 'Poppins', sans-serif;
     padding: 4vh;
@@ -133,79 +140,120 @@ main {
     font-size: 2.6vh;
 }
 
-
 .points ul {
-    list-style-type: circle;
+    list-style-type: circle; /* Default bullet style */
     padding-left: 17vh;
     font-size: 2.1vh;
     text-align: left;
 }
 
 .points li {
-    margin-bottom: 1.5vh;
-    color: black;
-    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5vh; /* Adds space between each bullet point */
+    color: black; /* Text color */
+    font-family: 'Poppins', sans-serif; /* Font style */
     font-size: 2.4vh;
 }
 
-/* Additional styles for small screens (mobile devices) */
-@media only screen and (max-width: 768px) {
+/* Media Query for mobile devices */
+@media screen and (max-width: 768px) {
+
+    /* General adjustments */
     body {
-        padding: 5vh 5vw;
-        background-position: center center;
+        padding: 2vh 5vw 0 5vw; /* Reduce padding for smaller screens */
+        font-size: 2vh; /* Adjust base font size */
+        background-size: cover; /* Ensure background covers smaller screens as well */
+    }
+
+    .wrapper {
+        padding: 2vh 5vw 0 5vw; /* Adjust padding for the wrapper */
     }
 
     .header {
-        padding: 30px;
+        padding: 30px; /* Adjust header padding */
+        background-position: center center; /* Adjust background position */
+        font-size: 4vh; /* Adjust font size for header text */
     }
 
     .header h1 {
-        font-size: 4vh;
+        font-size: 4vh; /* Smaller font size for mobile */
     }
 
     .date, .location1, .location2 {
-        font-size: 3vh;
+        font-size: 2.5vh; /* Smaller font size for dates and locations */
+        margin-top: 0.5vh; /* Reduce top margin */
     }
 
+    /* Navbar adjustments */
     .navbar {
-        flex-direction: column;
-        align-items: center;
-        top: auto;
-        position: relative;
+        flex-direction: column; /* Stack navbar links vertically */
+        padding: 5px; /* Reduce padding */
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
     }
 
     .navbar a {
-        padding: 1.5vh 2.5vh;
-        font-size: 2vh;
+        padding: 1vh 0; /* Reduce padding for navbar links */
+        font-size: 2.5vh; /* Smaller font size for navbar links */
+    }
+
+    .logo-container, .navbar .logo img {
+        width: 50px; /* Smaller logo size */
+        height: auto;
+    }
+
+    /* Main content adjustments */
+    main {
+        padding: 2vh; /* Reduce padding */
+        font-size: 2vh; /* Smaller font size */
+    }
+
+    /* Section and points adjustments */
+    section, .points ul {
+        font-size: 2vh; /* Adjust font size */
+        padding-left: 2vh; /* Reduce padding */
     }
 
     .points ul {
-        padding-left: 5vh;
-        font-size: 1.8vh;
+        padding-left: 5vw; /* Adjust padding */
     }
 
     .points li {
-        font-size: 2vh;
+        font-size: 2vh; /* Smaller font size for bullet points */
+        margin-bottom: 1vh; /* Less space between bullet points */
     }
 
-    main {
-        padding: 2vh;
-        font-size: 1.8vh;
+    /* Adjust divider margins */
+    .divider {
+        margin: 5vh 5vw; /* Reduce margin for dividers */
     }
 
+    /* Button adjustments */
+    a[href*="forms.gle"], a[href*="sites.google.com"] {
+        font-size: 2vh; /* Smaller button text */
+        padding: 10px 20px; /* Adjust button padding */
+        margin-top: 10px; /* Reduce margin */
+    }
+
+    /* Responsive iframe for Google Maps */
+    iframe {
+        width: 100%; /* Full width for maps */
+        height: 250px; /* Adjust height */
+    }
+
+    /* Contact section */
     .container {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
+        flex-direction: column; /* Stack content vertically */
+        width: auto; /* Full width */
+        margin-left: 0; /* Remove left margin */
     }
 
-    section {
-        width: 100%;
-        font-size: 2vh;
+    section h2, section h3 {
+        font-size: 3vh; /* Smaller headings */
     }
 
-    .logo-container {
-        display: flex;
-        justify-content: center;
+    p {
+        font-size: 2vh; /* Adjust font size for paragraphs */
+        margin-left: 2vh; /* Reduce side margins */
+        margin-right: 2vh;
     }
 }
+
