@@ -104,8 +104,16 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
-    
+    object-fit: contain; /* Ensures the entire logo is visible */
 }
+
+.logo-container {
+    overflow: visible; /* Ensures no clipping */
+    width: auto; /* Allows the container to size according to its content */
+    height: auto;
+}
+    
+
 
 #navbarLogo {
     opacity: 0;
