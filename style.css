@@ -2,10 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    box-sizing: border-box;
     /* margin: 10px 50px 0 50px;      */
     /* padding: 6vh 14.3vw 0 14.3vw; */
-    padding: 0; 
+    padding: 6vh 10vw 0 10vw; 
     font-family: Arial, sans-serif;
     /* line-height: 1.6; */
     background-image: url('nrao.jpg'); /* Path to your image */
@@ -23,10 +22,6 @@ body {
 }
 
 .header {
-    display: flex;
-    justify-content: center; /* Center content in the header */
-    align-items: center;
-    padding: 20px;
     font-family: 'Poppins', sans-serif;
     background-image: url('reionization_90.png'); /* Path to your image */
     opacity: 1;
