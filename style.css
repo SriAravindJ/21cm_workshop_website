@@ -3,20 +3,18 @@ html {
 }
 
 body {
-    padding: 5vh 8vw; /* More padding for desktop */
+    padding: 6vh 10vw 0 10vw; 
     font-family: Arial, sans-serif;
     background-image: url('nrao.jpg');
     opacity: 0.9;
-    background-size: cover;
-    background-position: center center;
+    background-size: cover; 
+    background-position: center center; 
     font-family: 'Poppins', sans-serif;
 }
 
 .wrapper {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; 
     background-color: white;
-    max-width: 1200px; /* Fixed width for desktop for better layout control */
-    margin: 0 auto; /* Center align on larger screens */
 }
 
 .header {
@@ -27,20 +25,28 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     color: #ffffff;
-    padding: 20px; /* More padding for desktop */
+    padding: 50px;
     text-align: center;
 }
 
 .header h1 {
-    font-size: 3.5vw; /* Font size relative to viewport width for responsiveness */
-    margin-top: 0;
+    font-size: 5.5vh;
+    margin-top: 0vh;
     font-weight: 600;
 }
 
+.white-text {
+    color: white;
+}
+
+.red-text {
+    color: yellow;
+}
+
 .date {
-    margin-top: -1vh;
-    margin-bottom: 0;
-    font-size: 2.5vw; /* Font size relative to viewport width */
+    margin-top: -1.5vh;
+    margin-bottom: 0vh;
+    font-size: 4.2vh;
     text-align: center;
     font-weight: 900;
     font-family: 'Bebas Neue', sans-serif;
@@ -50,8 +56,8 @@ body {
 .location1,
 .location2 {
     margin-top: 1vh;
-    margin-bottom: 0;
-    font-size: 2vw; /* Font size relative to viewport width */
+    margin-bottom: 0vh;
+    font-size: 3.5vh;
     text-align: center;
     font-weight: 700;
     font-style: italic;
@@ -78,10 +84,9 @@ body {
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 1.2em 2em; /* Larger padding for desktop */
+    padding: 2vh 3.6vh;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.2vw; /* Font size relative to viewport width */
 }
 
 .navbar .logo img {
@@ -100,18 +105,14 @@ body {
 
 main {
     font-family: 'Poppins', sans-serif;
-    padding: 2em; /* Larger padding for desktop */
-    font-size: 1vw; /* Font size relative to viewport width */
-    line-height: 1.6; /* Adjusted line height for better readability */
-    max-width: 100%; /* Ensures the main content doesn't exceed screen width */
+    padding: 4vh;
+    font-size: 2.1vh;
 }
 
 .sec1 {
     color: black;
     text-align: left;
-    font-size: 1.2vw; /* Font size relative to viewport width */
-    line-height: 1.6; /* Adjusted line height for better readability */
-    max-width: 100%;
+    font-size: 2.2vh;
 }
 
 .c1, .c2, .c3 {
@@ -129,44 +130,40 @@ main {
 
 .points2 {
     text-align: center;
-    font-size: 1.2vw; /* Font size relative to viewport width */
+    font-size: 2.6vh;
 }
 
 .points ul {
     list-style-type: circle;
-    padding-left: 2vw; /* Adjusted padding for desktop */
-    font-size: 1vw; /* Font size relative to viewport width */
+    padding-left: 17vh;
+    font-size: 2.1vh;
     text-align: left;
 }
 
 .points li {
-    margin-bottom: 1em; /* Adjusted margin for better spacing */
+    margin-bottom: 1.5vh;
     color: black;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2vw; /* Font size relative to viewport width */
+    font-size: 2.4vh;
 }
 
-/* Mobile styles */
+/* Additional styles for small screens (mobile devices) */
 @media only screen and (max-width: 768px) {
     body {
-        padding: 2vh 4vw; /* Reduced padding for mobile */
+        padding: 5vh 5vw;
         background-position: center center;
     }
 
-    .wrapper {
-        max-width: 100%; /* Full width on mobile */
-    }
-
     .header {
-        padding: 15px; /* Reduced padding for mobile */
+        padding: 30px;
     }
 
     .header h1 {
-        font-size: 5vw; /* Larger font size for mobile */
+        font-size: 4vh;
     }
 
     .date, .location1, .location2 {
-        font-size: 4vw; /* Larger font size for mobile */
+        font-size: 3vh;
     }
 
     .navbar {
@@ -177,30 +174,33 @@ main {
     }
 
     .navbar a {
-        padding: 1em 4vw; /* Reduced padding for mobile */
-        font-size: 3vw; /* Larger font size for mobile */
+        padding: 1.5vh 2.5vh;
+        font-size: 2vh;
     }
 
     .points ul {
-        padding-left: 4vw; /* Adjusted padding for mobile */
-        font-size: 3vw; /* Larger font size for mobile */
+        padding-left: 5vh;
+        font-size: 1.8vh;
     }
 
     .points li {
-        font-size: 3vw; /* Larger font size for mobile */
+        font-size: 2vh;
     }
 
     main {
-        padding: 1.5em; /* Reduced padding for mobile */
-        font-size: 3vw; /* Larger font size for mobile */
-        line-height: 1.5; /* Increased line height for readability */
+        padding: 2vh;
+        font-size: 1.8vh;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
     }
 
     section {
         width: 100%;
-        font-size: 3vw; /* Larger font size for mobile */
-        line-height: 1.5; /* Increased line height for readability */
-        word-break: break-word; /* Ensure words break naturally */
+        font-size: 2vh;
     }
 
     .logo-container {
