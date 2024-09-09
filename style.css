@@ -2,6 +2,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/*Re-define everything in percentages*/
+
 body {
     padding: 6vh 10vw 0 10vw; 
     font-family: Arial, sans-serif;
@@ -10,6 +12,43 @@ body {
     background-size: cover; 
     background-position: center center; 
     font-family: 'Poppins', sans-serif;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10vh;
+    margin-right: 0vh;
+  }
+  
+.image-item {
+    width: 31%; /* Ensure enough space for the text */
+    margin-bottom: 4%;
+    margin-top: 2%;
+    display: flex; /* Use Flexbox for alignment */
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center align content */
+  }
+  
+.custom-style {
+    width: 80%;
+    aspect-ratio: 1/1; /* Keep the image square */
+    object-fit: cover;
+
+    margin-bottom: 3%;
+    border: 2px solid #000; /* Black border, adjust thickness and color as needed */
+    padding: 10px; /* Space between the border and the content */
+    margin: 10px; /* Space outside the border */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  }
+  
+.image-item p {
+    font-size: 2vh;
+    color: #333;
+    width: 100%;
+    margin: 1%;
+    /*white-space:nowrap;*/
 }
 
 .wrapper {
@@ -90,7 +129,7 @@ body {
 }
 
 .navbar .logo img {
-    max-width: 100%;
+    max-width: 100%; 
     height: auto;
     display: block;
     margin: 0 auto;
@@ -113,6 +152,23 @@ main {
     color: black;
     text-align: left;
     font-size: 2.2vh;
+}
+
+.logo-text{
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-evenly; /* Align items horizontally from the left */
+    text-align: center;
+}
+
+.logos img {
+    width: 15%; /* Set the width for all images */
+    height: 15%; /* Set the height for all images */
+    aspect-ratio: 1/1;
 }
 
 .c1, .c2, .c3 {
